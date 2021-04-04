@@ -18,6 +18,7 @@ body{
 }
 
 .main-container{
+    
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -74,7 +75,8 @@ margin-top: 75px;
 #dark-blue{
     border-top: 5px solid  hsl(212, 86%, 64%) ;
 }
-@media  screen and (max-width:400px) {
+/* در قسمت مدیا برای رسپانسیو بودن صفحه در دسکتاپ در حالت کوچک از حداکثر عرض 800 استفاده شده است */
+@media  screen and (max-width:800px) {
     .main-container{
         flex-direction: column;
     }
