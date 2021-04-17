@@ -11,7 +11,7 @@ body{
 .section{
      padding: 20px; 
     position: relative;
-    width: 335px;
+    max-width: 335px;
     height: 285px;
     box-shadow: 1px 2px 5px hsl(234, 12%, 34%)
     
@@ -76,6 +76,14 @@ margin-top: 75px;
     border-top: 5px solid  hsl(212, 86%, 64%) ;
 }
 /* در قسمت مدیا برای رسپانسیو بودن صفحه در دسکتاپ در حالت کوچک از حداکثر عرض 800 استفاده شده است */
+@media screen and (max-width:1040px){
+    .main-container{
+        justify-content: center;
+        padding: 5px;
+    }
+    .section{width: 250px;}  
+    .section p{width: 200px;}
+}
 @media  screen and (max-width:800px) {
     .main-container{
         flex-direction: column;
